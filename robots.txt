@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-content/uploads/wc-logs/
+Disallow: /wp-content/uploads/woocommerce_transient_files/
+Disallow: /wp-content/uploads/woocommerce_uploads/
+Disallow: /*?add-to-cart=
+Disallow: /*?*add-to-cart=
+Disallow: /wp-admin/
+Disallow: /wp-admin/admin-ajax.php
+
+Sitemap: https://tiklabari.com/sitemap.xml
+Sitemap: https://tiklabari.com/sitemap-images.xml
+
+Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json
+Disallow: /.gitignore
+Disallow: /.gemini
+Disallow: /.env
