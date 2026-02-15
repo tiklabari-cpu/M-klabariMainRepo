@@ -607,6 +607,7 @@ const p = ({ onSearch: n, onCategoryChange: c }) => {
                                                         children: a.jsx("img", {
                                                             src: r,
                                                             alt: "Pinned",
+                                                            fetchpriority: "high",
                                                             className:
                                                                 "w-28 h-28 object-contain drop-shadow-2xl",
                                                         }),
