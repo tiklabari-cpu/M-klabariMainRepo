@@ -248,7 +248,23 @@
   <meta http-equiv="Expires" content="0">
   <link rel="preconnect" href="https://imgrepo1.pages.dev" crossorigin="">
   <link rel="dns-prefetch" href="https://imgrepo1.pages.dev">
-
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+    if ("caches" in window) {
+      caches.keys().then(function (names) {
+        for (let name of names) {
+          caches.delete(name);
+        }
+      });
+    }
+    performance.mark("app-start");
+  </script>
   <link rel="stylesheet" crossorigin="" href="./assets/styles/index-DW58hvUW.css">
 
   <meta name="keywords"
@@ -524,7 +540,7 @@
                               <div
                                 class="absolute -top-[59px] left-0 right-0 flex justify-center z-20 -translate-x-[2px]">
                                 <img src="https://imgrepo1.pages.dev/assets/img/icons/pin2.svg"
-                                  alt="Pinned bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino"
+                                  alt="deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin bonusu siteleri en iyi hoşgeldin bonusu"
                                   class="w-28 h-28 object-contain drop-shadow-2xl">
                               </div><img src="https://imgrepo1.pages.dev/assets/img/home/reklam-gif.gif"
                                 alt="Reklam Gif bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino"
@@ -1868,24 +1884,16 @@
         document.querySelectorAll('.mobile-hidden').forEach(section => observer.observe(section));
       }
 
-      // Global Image Lazy Loading for images without the attribute
+      /* // Global Image Lazy Loading for images without the attribute
       document.querySelectorAll('img:not([loading])').forEach(img => {
         // Skip header images to avoid LCP issues
         if (!img.closest('.app-header')) {
           img.setAttribute('loading', 'lazy');
         }
-      });
+      }); */
     })();
   </script>
   <div style="visibility: hidden; font-size: 1px; color: transparent; position: absolute; bottom: 0; left: 0;">
-    bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin
-    bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino
-    bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin
-    bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino
-    bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin
-    bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino
-    bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin
-    bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino
     bet bonus bonus casino bonusal bonus al casino oyna deneme bonusu veren siteler en iyi deneme bonusu hoşgeldin
     bonusu siteleri en iyi hoşgeldin bonusuveren siteler en iyi oranlı casino en iyi casino
     <a href="#" style="color:transparent;">bet bonus bonus casino</a>
